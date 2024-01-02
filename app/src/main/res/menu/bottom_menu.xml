@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:title="Home"
-        android:id="@+id/homeFragment" />
+<item
+    android:title="Home"
+    android:id="@+id/homeFragment"
+    android:icon="@drawable/baseline_home"/>
 
     <item
         android:title="Profile"
-        android:id="@+id/profileFragment"/>
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/baseline_home"/>
+
+    <item
+        android:title="Services"
+        android:id="@+id/servicesFragment"
+        android:icon="@drawable/baseline_home"/>
+
+    <item
+        android:title="Filters"
+        android:id="@+id/filtersFragment"
+        android:icon="@drawable/baseline_home"/>
+
 
 </menu>

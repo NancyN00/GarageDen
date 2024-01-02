@@ -1,10 +1,9 @@
-package com.example.garageden
+package com.example.garageden.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.garageden.auth.OnboardActivity
 import com.example.garageden.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

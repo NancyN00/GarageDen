@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view" >
+    <!--tools showIn will create a user interface for navigation drawer -->
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_jobs"
+            android:icon="@drawable/baseline_job"
+            android:title="Jobs"/>
+
+        <item
+            android:id="@+id/nav_helpsup"
+            android:icon="@drawable/baseline_support_agent"
+            android:title="Help/Support"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/baseline_settings"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/baseline_notifications"
+            android:title="Notification"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout"
+            android:title="Log out"/>
+
+
+    </group>
+</menu>

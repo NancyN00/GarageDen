@@ -6,19 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.garageden.R
-import com.example.garageden.databinding.FragmentHomeBinding
-import com.example.garageden.databinding.FragmentProfileBinding
+import com.example.garageden.databinding.FragmentFillersBinding
 
-class ProfileFragment : Fragment() {
+class FiltersFragment : Fragment() {
 
-    private lateinit var binding: FragmentProfileBinding
+    private lateinit var binding : FragmentFillersBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-       binding = FragmentProfileBinding.inflate(inflater, container, false)
+      binding = FragmentFillersBinding.inflate(inflater, container, false)
         return(binding.root)
     }
-
 
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "847646060403",
+    "project_id": "garage-den",
+    "storage_bucket": "garage-den.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847646060403:android:566feb7ef19a46fb831f06",
+        "android_client_info": {
+          "package_name": "com.example.garageden"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS_pEDJ1abcvl6KEqvfgXDfya5uufQyUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

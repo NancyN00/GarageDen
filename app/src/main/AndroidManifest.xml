@@ -22,7 +22,7 @@
             android:name=".auth.OnboardActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".auth.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
