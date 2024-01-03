@@ -13,36 +13,36 @@ import com.google.firebase.ktx.Firebase
 
 class RegistrationActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityRegistrationBinding
-    private lateinit var auth : FirebaseAuth
+    private lateinit var binding: ActivityRegistrationBinding
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-      binding =  ActivityRegistrationBinding.inflate(layoutInflater)
+        binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = Firebase.auth
 
-     binding.haveaccTxt.setOnClickListener {
-         val intent = Intent(this@RegistrationActivity, LoginActivity::class.java)
-         startActivity(intent)
-     }
+        binding.haveaccTxt.setOnClickListener {
+            val intent = Intent(this@RegistrationActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
-     binding.signupBtn.setOnClickListener {
-         val usermail = binding.emailregEdt.text.toString().trim()
-         val userpass = binding.passregEdt.text.toString().trim()
+        binding.signupBtn.setOnClickListener {
+            val usermail = binding.emailregEdt.text.toString().trim()
+            val userpass = binding.passregEdt.text.toString().trim()
 
-         auth.createUserWithEmailAndPassword(usermail, userpass).addOnCompleteListener {
-             if (it.isSuccessful){
-                 Toast.makeText(this, "Account Registered", Toast.LENGTH_SHORT).show()
-                 Log.d("Succ-->", it.toString())
-                 startActivity((Intent(this, LoginActivity::class.java)))
+            auth.createUserWithEmailAndPassword(usermail, userpass).addOnCompleteListener {
+                if (it.isSuccessful) {
+                    Toast.makeText(this, "Account Registered", Toast.LENGTH_SHORT).show()
+                    Log.d("Succ-->", it.toString())
+                    startActivity((Intent(this, LoginActivity::class.java)))
 
-             }else{
-                 Toast.makeText(this, "Failed, try again!", Toast.LENGTH_SHORT).show()
-                 Log.d("Failed--->", it.toString())
-             }
-         }
-     }
+                } else {
+                    Toast.makeText(this, "Failed, try again!", Toast.LENGTH_SHORT).show()
+                    Log.d("Failed--->", it.toString())
+                }
+            }
+        }
     }
 }
 

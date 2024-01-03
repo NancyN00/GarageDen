@@ -26,5 +26,7 @@ class OnboardActivity : AppCompatActivity() {
 
         }
 
+
+
     }
 }

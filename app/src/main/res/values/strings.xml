@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Garage Den</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //string to open and close nav drawer
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="services">Services</string>
+    <string name="filters">Filters</string>
 </resources>

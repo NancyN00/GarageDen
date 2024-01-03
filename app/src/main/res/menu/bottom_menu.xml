@@ -2,24 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 <item
-    android:title="Home"
+    android:title="@string/home"
     android:id="@+id/homeFragment"
     android:icon="@drawable/baseline_home"/>
 
     <item
-        android:title="Profile"
+        android:title="@string/profile"
         android:id="@+id/profileFragment"
-        android:icon="@drawable/baseline_home"/>
+        android:icon="@drawable/baseline_person"/>
 
     <item
-        android:title="Services"
+        android:title="@string/services"
         android:id="@+id/servicesFragment"
-        android:icon="@drawable/baseline_home"/>
+        android:icon="@drawable/baseline_services"/>
 
     <item
-        android:title="Filters"
+        android:title="@string/filters"
         android:id="@+id/filtersFragment"
-        android:icon="@drawable/baseline_home"/>
-
+        android:icon="@drawable/baseline_filler"/>
 
 </menu>
