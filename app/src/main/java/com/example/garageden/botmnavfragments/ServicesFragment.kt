@@ -16,8 +16,8 @@ class ServicesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-     binding = FragmentServicesBinding.inflate(inflater, container, false)
-        return(binding.root)
+        binding = FragmentServicesBinding.inflate(inflater, container, false)
+        return (binding.root)
     }
 
 }

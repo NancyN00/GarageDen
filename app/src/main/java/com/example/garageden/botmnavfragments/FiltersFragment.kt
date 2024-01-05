@@ -10,14 +10,14 @@ import com.example.garageden.databinding.FragmentFillersBinding
 
 class FiltersFragment : Fragment() {
 
-    private lateinit var binding : FragmentFillersBinding
+    private lateinit var binding: FragmentFillersBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-      binding = FragmentFillersBinding.inflate(inflater, container, false)
-        return(binding.root)
+        binding = FragmentFillersBinding.inflate(inflater, container, false)
+        return (binding.root)
     }
 
 }
