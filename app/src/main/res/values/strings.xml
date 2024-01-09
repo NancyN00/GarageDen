@@ -13,4 +13,6 @@
     <string name="what_are_you_looking_for">WHAT ARE YOU LOOKING FOR?</string>
     <string name="or_not">or not</string>
     <string name="explore_more">Explore More</string>
+    <string name="short_filtered_by"><![CDATA[SHORT & FILTERED BY]]></string>
+    <string name="reset">RESET</string>
 </resources>
