@@ -50,13 +50,9 @@
                 app:itemRippleColor="@color/black"
                 app:itemTextColor="@color/black"
                 app:menu="@menu/bottom_menu" />
-
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-
     </RelativeLayout>
-
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_drawer"
         android:layout_width="wrap_content"
