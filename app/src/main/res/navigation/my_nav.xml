@@ -3,33 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/homeFragment3">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/homeFragment3"
+        android:id="@+id/homeFragment"
         android:name="com.example.garageden.botmnavfragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment3_to_profileFragment2"
-            app:destination="@id/profileFragment2" />
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
-        android:id="@+id/profileFragment2"
+        android:id="@+id/profileFragment"
         android:name="com.example.garageden.botmnavfragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/action_profileFragment2_to_servicesFragment2"
-            app:destination="@id/servicesFragment2" />
+            android:id="@+id/action_profileFragment_to_servicesFragment2"
+            app:destination="@id/servicesFragment" />
     </fragment>
     <fragment
-        android:id="@+id/servicesFragment2"
+        android:id="@+id/servicesFragment"
         android:name="com.example.garageden.botmnavfragments.ServicesFragment"
         android:label="fragment_services"
         tools:layout="@layout/fragment_services" >
         <action
-            android:id="@+id/action_servicesFragment2_to_filltersFragment"
+            android:id="@+id/action_servicesFragment_to_filltersFragment"
             app:destination="@id/filltersFragment" />
     </fragment>
     <fragment

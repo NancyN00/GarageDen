@@ -43,6 +43,10 @@ class HomeActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
+        //Default Navigation bar Tab selected
+        replaceFragment(HomeFragment())
+        binding.navigationDrawer.setCheckedItem(R.id.nav_jobs)
+
         //set nav item selected listener
 
         binding.navigationDrawer.setNavigationItemSelectedListener(this)
@@ -62,6 +66,17 @@ class HomeActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
 
         fragmentManager = supportFragmentManager
         openFragment(HomeFragment())
+
+    }
+
+    //Use replace() to replace an existing fragment in a container with an instance of a new fragment class that you provide.
+    //Calling replace() is equivalent to calling remove() with a fragment in a container and adding a new fragment to that same container.
+    private fun replaceFragment(fragment: Fragment) {
+         supportFragmentManager
+             .beginTransaction()
+             .replace(R.id.fragment_container, fragment)
+             .commit()
+
 
     }
     //assign items to respective fragments
@@ -112,7 +127,7 @@ class HomeActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
 
     private fun openFragment(fragment: Fragment){
         val fragmentTransaction : FragmentTransaction = fragmentManager.beginTransaction()
-         fragmentTransaction.replace(R.id.fragment_container, fragment)
+        fragmentTransaction.replace(R.id.fragment_container, fragment)
         fragmentTransaction.commit()
     }
 

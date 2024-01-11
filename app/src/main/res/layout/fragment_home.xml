@@ -13,26 +13,26 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
 
             <LinearLayout
                 android:id="@+id/what_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="150dp"
                 android:orientation="horizontal"
                 tools:ignore="MissingConstraints">
 
 
                 <TextView
                     android:id="@+id/what_txt"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="15dp"
                     android:text="What are you looking for?"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.SearchView
@@ -84,10 +84,11 @@
             <LinearLayout
                 android:id="@+id/maximized"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
+                android:background="@drawable/blackmazda"
                 app:layout_constraintTop_toBottomOf="@id/ornot_layout"
                 tools:layout_editor_absoluteX="76dp">
 
@@ -110,10 +111,11 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:layout_marginStart="100dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
                         android:backgroundTint="@color/red"
                         android:text="@string/explore_more" />
 

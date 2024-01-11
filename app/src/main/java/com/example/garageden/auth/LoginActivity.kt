@@ -3,7 +3,9 @@ package com.example.garageden.auth
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.text.TextUtils
+import android.widget.TextView
 import com.example.garageden.HomeActivity
 import com.example.garageden.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -22,7 +24,14 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        fun String.toEditable(): Editable = Editable.Factory.getInstance().newEditable(this)
+
+        binding.emailloginTxt.text = "nancy@gmail.com".toEditable()
+        binding.passwordloginTxt.text = "12345678".toEditable()
+
+
         binding.signinBtn.setOnClickListener {
+
             val mail = binding.emailloginTxt.text.toString().trim()
             val pass = binding.passwordloginTxt.text.toString().trim()
 
