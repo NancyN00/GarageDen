@@ -76,9 +76,8 @@ class HomeActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
              .beginTransaction()
              .replace(R.id.fragment_container, fragment)
              .commit()
-
-
     }
+
     //assign items to respective fragments
     //when acts as a switch case
     //item id will take id in nav_drawer

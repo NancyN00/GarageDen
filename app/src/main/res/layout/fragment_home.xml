@@ -144,6 +144,7 @@
                 tools:layout_editor_absoluteX="80dp" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/browserv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
