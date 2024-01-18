@@ -15,11 +15,10 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:elevation="4dp"
             android:background="@color/lightblue"
             app:layout_constraintBottom_toTopOf="@id/fragment_container"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
         <FrameLayout
@@ -29,17 +28,18 @@
             app:layout_constraintTop_toBottomOf="@id/toolbar"/>
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/cord"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottomAppBar"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:contentInsetStart="0dp"
                 app:fabAlignmentMode="center"
                 app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="20dp"/>
+                app:fabCradleRoundedCornerRadius="20dp" />
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
@@ -47,11 +47,13 @@
                 android:layout_height="wrap_content"
                 app:elevation="0dp"
                 android:layout_gravity="bottom"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="?android:attr/windowBackground"
                 app:labelVisibilityMode="labeled"
                 app:itemIconTint="@color/black"
                 app:itemRippleColor="@color/black"
                 app:itemTextColor="@color/black"
-                android:background="@color/lightblue"
                 app:menu="@menu/bottom_menu" />
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -21,9 +21,16 @@ class BrowseAdapter : RecyclerView.Adapter<BrowseAdapter.BrowseViewHolder>() {
     }
 
     override fun getItemCount(): Int = browse.size
+
+    fun setBrowseItems(bros : List<BrowseItem>){
+        this.browse = bros.toMutableList()
+        notifyDataSetChanged()
+    }
     inner class BrowseViewHolder(val binding: BrowseLayoutBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(serv: BrowseItem) {
-            TODO("Not yet implemented")
+            binding.brandTxt.text = serv.title
+            binding.desc.text = serv.description
+            binding.starImg.setImageResource(serv.img)
         }
     }
 }
