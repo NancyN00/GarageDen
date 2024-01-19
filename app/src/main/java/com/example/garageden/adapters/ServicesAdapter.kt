@@ -20,11 +20,17 @@ class ServicesAdapter : RecyclerView.Adapter<ServicesAdapter.ServicesViewHolder>
     override fun onBindViewHolder(holder: ServicesViewHolder, position: Int) {
         val serv = services[position]
         holder.bind(serv)
+    }
 
+    fun setServiceItems(servItem : List<ServicesItem>){
+        this.services = servItem.toMutableList()
+        notifyDataSetChanged()
     }
     inner class ServicesViewHolder(val binding : ServiceLayoutBinding) : RecyclerView.ViewHolder(binding.root)  {
         fun bind(serv: ServicesItem) {
-            TODO("Not yet implemented")
+            binding.threeDot.setImageResource(serv.img)
+            binding.diag.setImageResource(serv.imgD)
+            binding.carDiag.text = serv.name
         }
 
     }
