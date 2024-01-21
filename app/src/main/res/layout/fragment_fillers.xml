@@ -246,6 +246,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/filt_btn"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="144dp"
