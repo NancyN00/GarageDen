@@ -1,12 +1,12 @@
 # Garage Den
 
-A Garage appalication that offers the best mechanic in town. 
+A Garage application that offers the best mechanic in town. 
 
 ## Features
 
 - User registration and login.
 - Browse section for cars found.
-- Services offered atr Garage Den.
+- Services offered at Garage Den.
 
 ## Technologies
 
