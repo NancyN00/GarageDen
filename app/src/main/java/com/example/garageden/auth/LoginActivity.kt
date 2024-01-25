@@ -24,10 +24,10 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        fun String.toEditable(): Editable = Editable.Factory.getInstance().newEditable(this)
+      //  fun String.toEditable(): Editable = Editable.Factory.getInstance().newEditable(this)
 
-        binding.emailloginTxt.text = "nancy@gmail.com".toEditable()
-        binding.passwordloginTxt.text = "12345678".toEditable()
+      //  binding.emailloginTxt.text = "nancy@gmail.com".toEditable()
+      //  binding.passwordloginTxt.text = "12345678".toEditable()
 
 
         binding.signinBtn.setOnClickListener {

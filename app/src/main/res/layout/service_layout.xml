@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="200dp"
+    android:layout_width="150dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="20dp"
-    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp"
     android:layout_marginTop="10dp"
     android:layout_marginHorizontal="8dp">
 
@@ -31,18 +31,18 @@
                     android:id="@+id/diag"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/carddiag"
-                    android:layout_marginTop="20dp"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/carddiag" />
 
-                  <TextView
+                <TextView
                       android:id="@+id/car_diag"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:text="Car Diagostic"
-                      android:layout_marginTop="20dp"
+                      android:layout_marginTop="3dp"
                       android:textStyle="bold"
-                      android:textSize="30sp"
+                      android:textSize="20sp"
                       android:textAlignment="center"/>
 
             </LinearLayout>
